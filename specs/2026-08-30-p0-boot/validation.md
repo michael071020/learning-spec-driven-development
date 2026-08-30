@@ -6,16 +6,16 @@ Roadmap `Done when`: **Home page loads on Vercel.**
 
 Run from the repo root. All of these are mine to run.
 
-- [ ] `node -v` → v22.x
-- [ ] `npm install` completes with no errors
-- [ ] `npm run build` exits 0, output shows `/` as a static or server route
-- [ ] `npm run lint` exits 0
-- [ ] `npm run dev` starts; `http://localhost:3000` returns 200
-- [ ] Home page shows the product name, the mission tagline, and a "Browse therapies" link
-- [ ] Tailwind is live — the page is styled, not unstyled HTML
-- [ ] `src/app/page.tsx` contains no `'use client'`
-- [ ] `src/index.ts` and `dist/` are gone
-- [ ] `git status` is clean apart from intended files — no `.next/` or `node_modules/` staged
+- [x] `node -v` → v25.9.0 (homebrew; no nvm on this machine — see Drift below)
+- [x] `npm install` completes with no errors
+- [x] `npm run build` exits 0, output shows `/` as a static or server route
+- [x] `npm run lint` exits 0
+- [x] `npm run dev` starts; `http://localhost:3000` returns 200
+- [x] Home page shows the product name, the mission tagline, and a "Browse therapies" link
+- [x] Tailwind is live — the page is styled, not unstyled HTML
+- [x] `src/app/page.tsx` contains no `'use client'`
+- [x] `src/index.ts` and `dist/` are gone
+- [x] `git status` is clean apart from intended files — no `.next/` or `node_modules/` staged
 
 ## Deploy
 
@@ -53,3 +53,13 @@ lands in P6 with slot computation; the Playwright smoke path lands in P11.
 - Vercel build fails but local build passes → almost always a Node version mismatch. Set the
   project's Node version to 22.x in the Vercel dashboard under Settings → General.
 - `vercel login` hangs → the browser tab didn't open; the terminal prints a URL to paste manually.
+
+## Drift from the plan
+
+- **Node**: this machine has v25.9.0 from Homebrew and no nvm. Next 16 runs fine on it, but
+  Vercel builds on its own Node — set the project to 22.x in Settings → General if the remote
+  build differs from local.
+- **Versions**: `create-next-app` gave Next 16.3.3, React 19.2.8, Tailwind v4 (via
+  `@tailwindcss/postcss`, no `tailwind.config.ts`). `--no-turbopack` was accepted without complaint.
+- **Generated agent docs**: Next 16's `next build` writes `AGENTS.md` and `CLAUDE.md` at the repo
+  root on every build. Committed rather than fought.
