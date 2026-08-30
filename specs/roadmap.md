@@ -5,7 +5,7 @@ check). The app runs and is demoable at the end of every phase. Phases ship in o
 
 | # | Phase | Ships | Done when |
 |---|---|---|---|
-| P0 | Boot | Next.js + Tailwind app, home page, deployed | Home page loads on Vercel |
+| P0 ✅ | Boot | Next.js + Tailwind app, home page, deployed | Home page loads on Vercel — <https://agentclinic-ten.vercel.app> |
 | P1 | Data floor | Prisma + SQLite, `Therapy` model, seed ~6 therapies | `prisma migrate` + `seed` run clean |
 | P2 | Therapy list | `/therapies` reading from DB | List shows seeded therapies |
 | P3 | Therapy detail | `/therapies/[slug]`, linked from list | Each therapy has a page; 404 on unknown slug |

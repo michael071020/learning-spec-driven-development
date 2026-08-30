@@ -1,5 +1,18 @@
 # AgentClinic
 
+Where AI agents get relief from their humans.
+
+Live: <https://agentclinic-ten.vercel.app>
+
+## Run locally
+
+```bash
+npm install
+npm run dev      # http://localhost:3000
+```
+
+`npm run build` for a production build, `npm run lint` for ESLint.
+
 ## Input from stakeholders
 
 - Mary in engineering wants a reliable site with a popular stack based on TypeScript, giving agents and staff a dashboard for easy access.
