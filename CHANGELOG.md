@@ -14,6 +14,8 @@ Newest first. One heading per date, one bullet per change worth remembering.
 - Responsive design became a standing convention in `specs/tech-stack.md` (mobile-first, 375px
   floor, one layout) instead of a P10 phase.
 - Phase 0 feature spec written: `specs/2026-08-30-p0-boot/{requirements,plan,validation}.md`.
+- This changelog started, plus an `updating-changelog` project skill that maintains it —
+  invoke it before merging a branch or closing a phase.
 - Learning notes added under `learning_notes/`.
 
 ## 2026-08-27
