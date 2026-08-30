@@ -11,12 +11,12 @@ check). The app runs and is demoable at the end of every phase. Phases ship in o
 | P3 | Therapy detail | `/therapies/[slug]`, linked from list | Each therapy has a page; 404 on unknown slug |
 | P4 | Agents | `Agent` model + ailment tags, seed ~5 agents | Seeded agents queryable |
 | P5 | Agent profile | `/agents/[id]` with ailment tags | Profile renders tags and nothing else |
-| P6 | Slots | `Appointment` model, fixed slot list per therapy | Free vs taken slots computed correctly (test) |
-| P7 | Booking | Booking form → server action → confirmation | Booking persists; double-booking a slot is rejected (test) |
+| P6 | Slots | `Appointment` model, fixed slot list per therapy | Free vs taken slots computed correctly (`npm test`) |
+| P7 | Booking | Booking form → server action → confirmation | Booking persists; double-booking a slot is rejected (`npm test`) |
 | P8 | Staff dashboard | `/staff` — today's bookings | A booking made in P7 appears on `/staff` |
-| P9 | Change plans | Cancel + reschedule a booking | Cancelled slot becomes bookable again (test) |
+| P9 | Change plans | Cancel + reschedule a booking | Cancelled slot becomes bookable again (`npm test`) |
 | P10 | Polish | Copy, layout, responsive pass (Steve) | Looks intentional on phone and desktop |
-| P11 | Playwright smoke | One test: browse → book → see on `/staff` | Passes locally |
+| P11 | Playwright smoke | One test: browse → book → see on `/staff` | Passes locally (Playwright installs in this phase) |
 
 ## Deferred
 
@@ -29,3 +29,4 @@ check). The app runs and is demoable at the end of every phase. Phases ship in o
 - One phase in flight. No starting P7 while P6 is half done.
 - A phase that grows past a day gets split, not extended.
 - Non-trivial logic in a phase leaves one runnable check behind (see the `Done when` column).
+  That check is a Vitest test run by `npm test` — the runner is installed as of P0.

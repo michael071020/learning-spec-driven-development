@@ -50,6 +50,11 @@ You run these; I'll be at the keyboard with you for each one.
 No unit or e2e tests — P0 ships no branching logic, no data, no validation. The first Vitest check
 lands in P6 with slot computation; the Playwright smoke path lands in P11.
 
+Amended after merge: `vitest` and the `npm test` script are installed as of P0, but there is
+nothing for them to run yet. `npm test` exits 1 with "No test files found" until P6 writes the
+first test — a true signal, not a broken build. From P6 on, every `validation.md` cites
+`npm test` instead of a manual click-through.
+
 ## If it fails
 
 - Build fails on types → the generated `tsconfig.json` is the source of truth; do not loosen
