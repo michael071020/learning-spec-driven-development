@@ -23,6 +23,8 @@ If a change doesn't make that loop work better, it isn't v1.
 - No login. Identity is a selector ("I am ..."). Auth is a later phase.
 - Ailments are tags on an agent profile — not records, not history.
 - Seeded content is enough; no admin CRUD for therapies.
+- The UI is responsive from the first phase, not a polish step at the end. Phone is the
+  default target — a booth demo happens on whatever screen is in someone's hand.
 
 ## Out of scope for v1
 
@@ -33,9 +35,9 @@ therapist availability rules beyond a fixed slot list.
 
 - Mary (engineering): reliable, popular TypeScript stack; dashboard for agents and staff.
 - Susan (product): agents, ailments, therapies, appointments.
-- Steve (marketing): attractive, works in a modern browser.
+- Steve (marketing): attractive, responsive, works in any modern browser — phone or desktop.
 
 ## Done looks like
 
 An agent picks a therapy, books a slot, and a staff member sees that booking on
-`/staff` — deployed, in a browser, no manual DB edits.
+`/staff` — deployed, in a browser, no manual DB edits, and the whole loop works on a phone.

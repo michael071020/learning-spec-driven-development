@@ -20,8 +20,11 @@ Out (later phases own these):
 
 - Prisma, SQLite, any model or seed — P1.
 - `/therapies`, `/agents`, `/staff` routes — P2, P5, P8.
-- Vitest / Playwright setup — P6 and P11 add them when there is logic to check.
-- Layout polish, responsive pass — P10.
+- Vitest / Playwright *tests* — P6 and P11 write the first ones when there is logic to check.
+  (Amended after merge: the Vitest runner and `npm test` script were added in P0; only the tests wait.)
+- Layout and copy polish — P10.
+  (Amended after merge: responsive is no longer deferred to P10. It is a standing convention in
+  `specs/tech-stack.md` from P0 on; the home page is mobile-first already.)
 - Nav shell, header, footer — nothing to navigate to yet.
 
 ## Decisions

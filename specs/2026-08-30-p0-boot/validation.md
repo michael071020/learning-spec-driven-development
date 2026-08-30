@@ -13,6 +13,8 @@ Run from the repo root. All of these are mine to run.
 - [x] `npm run dev` starts; `http://localhost:3000` returns 200
 - [x] Home page shows the product name, the mission tagline, and a "Browse therapies" link
 - [x] Tailwind is live — the page is styled, not unstyled HTML
+- [x] Home page reads correctly at 375px wide — no horizontal scroll, nothing clipped
+      (added after merge, when responsive became a standing convention)
 - [x] `src/app/page.tsx` contains no `'use client'`
 - [x] `src/index.ts` and `dist/` are gone
 - [x] `git status` is clean apart from intended files — no `.next/` or `node_modules/` staged
@@ -49,6 +51,11 @@ You run these; I'll be at the keyboard with you for each one.
 
 No unit or e2e tests — P0 ships no branching logic, no data, no validation. The first Vitest check
 lands in P6 with slot computation; the Playwright smoke path lands in P11.
+
+Amended after merge: `vitest` and the `npm test` script are installed as of P0, but there is
+nothing for them to run yet. `npm test` exits 1 with "No test files found" until P6 writes the
+first test — a true signal, not a broken build. From P6 on, every `validation.md` cites
+`npm test` instead of a manual click-through.
 
 ## If it fails
 

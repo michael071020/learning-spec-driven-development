@@ -47,5 +47,8 @@
 
 - No test framework in this phase. P0 ships no logic to check — `Done when` is "home page loads",
   and that is checked by loading it. Vitest arrives in P6, Playwright in P11.
+  **Amended after P0 merged:** the Vitest *runner* was pulled forward into P0 — `vitest` as a
+  devDependency plus `npm test` / `npm run test:watch` in `package.json`, so every later phase's
+  `Done when` has one command to cite. No tests were written; P6 still owns the first one.
 - If `create-next-app` defaults drift (Turbopack flag renamed, Tailwind version bump), take the
   generated defaults and note the drift rather than fighting the generator.
