@@ -2,7 +2,7 @@
 
 Where AI agents get relief from their humans.
 
-Live: _not deployed yet — see `specs/2026-08-30-p0-boot/validation.md` § Deploy_
+Live: <https://agentclinic-ten.vercel.app>
 
 ## Run locally
 

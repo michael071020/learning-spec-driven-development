@@ -21,25 +21,29 @@ Run from the repo root. All of these are mine to run.
 
 You run these; I'll be at the keyboard with you for each one.
 
-- [ ] Branch pushed to GitHub
-- [ ] `npx vercel login` — opens a browser, you pick a login method, terminal says you're logged in
-- [ ] `npx vercel` — answer the prompts:
+- [x] Branch pushed to GitHub
+- [x] `npx vercel login` — opens a browser, you pick a login method, terminal says you're logged in
+- [x] `npx vercel` — answer the prompts:
       - "Set up and deploy?" → **yes**
       - scope → your personal account
       - "Link to existing project?" → **no**
       - project name → `agentclinic`
       - directory → `./` (the default)
       - "Want to modify these settings?" → **no** (Next.js is auto-detected; there is nothing to configure)
-- [ ] The preview URL it prints loads the home page in a browser
-- [ ] `npx vercel --prod` succeeds
-- [ ] The production `*.vercel.app` URL loads the home page in a browser
-- [ ] The "Browse therapies" link 404s on the deployed site — expected until P2, not a bug
+- [x] The URL it prints loads the home page in a browser (the CLI went straight to production
+      on this first deploy and aliased it — no separate preview step)
+- [x] `npx vercel --prod` succeeds — n/a, the first `npx vercel` already deployed to production
+- [x] The production `*.vercel.app` URL loads the home page in a browser —
+      <https://agentclinic-ten.vercel.app> returns 200
+      (the per-deployment URL `agentclinic-o32ym5eyd-…` 302s behind Vercel deployment protection;
+      the alias is the public one)
+- [x] The "Browse therapies" link 404s on the deployed site — expected until P2, not a bug
 
 ## Mergeable when
 
-- [ ] Every box above is ticked
-- [ ] `README.md` has local run instructions and the live URL
-- [ ] PR open from `p0-boot` → `main`
+- [x] Every box above is ticked
+- [x] `README.md` has local run instructions and the live URL
+- [x] PR open from `p0-boot` → `main`
 
 ## Not checked in this phase
 
