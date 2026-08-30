@@ -44,3 +44,6 @@ next-env.d.ts
 /tmp
 /out-tsc
 .vscode/*
+
+# local Claude Code settings (not shared)
+.claude/settings.local.json
